@@ -1,4 +1,4 @@
-# wload
+# wloader
 
 Windows 10 PRO Activator without using any backdoor loader from China and neither you will need any crack anymore that is valid for a week or two. This is script is written for cmd. This script will 
 also removing all bloatware from Windows 10. Edit script after your needs.
@@ -10,36 +10,36 @@ slmgr.vbs /dlv
 
 ### Activate Windows 10 Enterprise 10.0.19043 N/A Build 19043, full example 
 
-```bat
+```ba
 slmgr.vbs /ipk DPH2V-TTNVB-4X9Q3-TJR4H-KHJW4
 slmgr /skms kms8.msguides.com
 slmgr.vbs /ato
 ```
 ### View the License Expiration Date
 
-```bat
+```powershell
 slmgr.vbs /xpr
 ```
 ### Remove Activation Key
 
-```bat
+```powershell
 slmgr.vbs /upk
 ```
 ### Uninstall Product Key
 
- ```bat
+ ```powershell
 slmgr.vbs /cpky
 ```
 
 ### Set Your License Key
 
-```bat
+```powershell
 slmgr.vbs /ipk #####-#####-#####-#####-#####
 ```
 
 ### Configure `slmgr` Via Remote
 
-```bat
+```powershell
 slmgr.vbs computername username password /option
 ```
 
@@ -63,13 +63,13 @@ Enterprise LSTB N:   2F77B-TNFGY-69QQF-B8YKP-D69TJ
 
 * Add keys via 
 
-```bat
+```powershell
 slmgr /skms <server>
 ```
 
 * Some Available Servers
 
-```bat
+```powershell
 kms.digiboy.ir
 kms.cangshui.net
 hq1.chinancce.com
@@ -91,7 +91,7 @@ kms.03k.org:1688
 
 ### SLMGR Commands
 
-```bat
+```powershell
 slmgr.exe -ato                                    Activate Windows license and product key against Microsoft’s server.
 slmgr.exe -atp                                    Confirmation_ID Activate Windows with user-provided Confirmation   ID.
 slmgr.exe -ckms                                   Clear the name of KMS server used to default and port to default.
@@ -127,13 +127,13 @@ slmgr.exe -fta Certificate Thumbprint             Force token-based activation u
 
 * Print current settings
 
-```bat
+```powershell
 Get-MpPreference
 ```
 
 * Copy and paste for disable all protection at once
 
-```bat
+```powershell
 Set-MpPreference -DisableArchiveScanning      $true                
 Set-MpPreference -DisableAutoExclusions       $true                   
 Set-MpPreference -DisableBehaviorMonitoring   $true              
@@ -147,7 +147,7 @@ Set-MpPreference -ScanParameters              0
 
 ### Install WSL2 (`Gentoo`)
 
-```bat
+```powershell
 Enable-WindowsOptionalFeature -NoRestart -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 Enable-WindowsOptionalFeature -NoRestart -Online -FeatureName VirtualMachinePlatform
 wsl --set-default-version 2

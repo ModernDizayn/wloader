@@ -3,8 +3,7 @@
 Windows 10 PRO Activator without using any backdoor loader from China and neither you will need any crack anymore that is valid for a week or two. This is script is written for cmd. This script will 
 also removing all bloatware from Windows 10. Edit script after your needs.
 
-
-![Screenshot](.media/crack_windows.10.gif)
+![crack_windows 10](https://user-images.githubusercontent.com/26827453/174215555-15beab56-d076-4285-afe7-21995cbd0dfe.gif)
 
 To display more detailed license information–including the activation ID, installation ID, and other details–run the following command:
 slmgr.vbs /dlv

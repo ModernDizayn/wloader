@@ -8,57 +8,66 @@ also removing all bloatware from Windows 10. Edit script after your needs.
 To display more detailed license information–including the activation ID, installation ID, and other details–run the following command:
 slmgr.vbs /dlv
 
-### Activate Windows 10 Enterprise 10.0.19043 N/A Build 19043, full example: 
-```bat
-    slmgr.vbs /ipk DPH2V-TTNVB-4X9Q3-TJR4H-KHJW4
-    slmgr /skms kms8.msguides.com
-    slmgr.vbs /ato
+### Activate Windows 10 Enterprise 10.0.19043 N/A Build 19043, full example 
 
+```bat
+slmgr.vbs /ipk DPH2V-TTNVB-4X9Q3-TJR4H-KHJW4
+slmgr /skms kms8.msguides.com
+slmgr.vbs /ato
+```
 ### View the License Expiration Date
-```bat
-    slmgr.vbs /xpr
 
-### Remove Activation Key:
 ```bat
-    slmgr.vbs /upk
+slmgr.vbs /xpr
+```
+### Remove Activation Key
 
+```bat
+slmgr.vbs /upk
+```
 ### Uninstall Product Key
+
  ```bat
-    slmgr.vbs /cpky
-
-### Set new key:
-```bat
-    slmgr.vbs /ipk #####-#####-#####-#####-#####
-
-## Configure slmgr via remote
-```bat
-    slmgr.vbs computername username password /option
-
-
-
-### Keys
-```
-    Home:                TX9XD-98N7V-6WMQ6-BX7FG-H8Q99
-    Home N:              3KHY7-WNT83-DGQKR-F7HPR-844BM
-    Professional:        W269N-WFGWX-YVC9B-4J6C9-T83GX
-    Professional N:      MH37W-N47XK-V7XM9-C7227-GCQG9
-    Education:           NW6C2-QMPVW-D7KKK-3GKT6-VCFB2
-    Education N:         2WH4N-8QGBV-H22JP-CT43Q-MDWWJ
-    Enterprise:          NPPR9-FWDCX-D2C8J-H872K-2YT43
-    Enterprise N:        DPH2V-TTNVB-4X9Q3-TJR4H-KHJW4
-    Enterprise LSTB:     WNMTR-4C88C-JK8YV-HQ7T2-76DF9
-    Enterprise LSTB N:   2F77B-TNFGY-69QQF-B8YKP-D69TJ
+slmgr.vbs /cpky
 ```
 
-### KMS Servers:
+### Set Your License Key
 
-Add keys via: 
+```bat
+slmgr.vbs /ipk #####-#####-#####-#####-#####
+```
+
+### Configure `slmgr` Via Remote
+
+```bat
+slmgr.vbs computername username password /option
+```
+
+
+### Windows 10 Keys
+
+```
+Home:                TX9XD-98N7V-6WMQ6-BX7FG-H8Q99
+Home N:              3KHY7-WNT83-DGQKR-F7HPR-844BM
+Professional:        W269N-WFGWX-YVC9B-4J6C9-T83GX
+rofessional N:      MH37W-N47XK-V7XM9-C7227-GCQG9
+Education:           NW6C2-QMPVW-D7KKK-3GKT6-VCFB2
+Education N:         2WH4N-8QGBV-H22JP-CT43Q-MDWWJ
+Enterprise:          NPPR9-FWDCX-D2C8J-H872K-2YT43
+Enterprise N:        DPH2V-TTNVB-4X9Q3-TJR4H-KHJW4
+Enterprise LSTB:     WNMTR-4C88C-JK8YV-HQ7T2-76DF9
+Enterprise LSTB N:   2F77B-TNFGY-69QQF-B8YKP-D69TJ
+```
+
+### KMS Servers
+
+* Add keys via 
 
 ```bat
 slmgr /skms <server>
 ```
 
-Some Available Servers: 
+* Some Available Servers
 
 ```bat
 kms.digiboy.ir
@@ -116,13 +125,13 @@ slmgr.exe -fta Certificate Thumbprint             Force token-based activation u
 
 ### Disable RealTime Protection / Windows Defenders / Windows AutoScans
 
-Print current settings
+* Print current settings
 
 ```bat
 Get-MpPreference
 ```
 
-Copy and paste for disable all protection at once
+* Copy and paste for disable all protection at once
 
 ```bat
 Set-MpPreference -DisableArchiveScanning      $true                
@@ -136,7 +145,7 @@ Set-MpPreference -DisableArchiveScanning      $true
 Set-MpPreference -ScanParameters              0
 ```
 
-### Install WSL2 ( Gentoo )
+### Install WSL2 (`Gentoo`)
 
 ```bat
 Enable-WindowsOptionalFeature -NoRestart -Online -FeatureName Microsoft-Windows-Subsystem-Linux

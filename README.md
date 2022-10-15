@@ -173,10 +173,11 @@ wsl --set-default-version 2
 wsl --import gentoo C:\Users\salfter\gentoo\ C:\Users\salfter\Downloads\stage3-amd64-nomultilib-20200624T214505Z.tar --version 2
 ```
 
-### Good Pages
+### Resources
 
-*  https://www.reneelab.com/win10-activation-crack-free.html
- * https://docs.microsoft.com/sv-se/windows-server/get-started/kmsclientkeys
+* https://www.reneelab.com/win10-activation-crack-free.html
+* https://docs.microsoft.com/sv-se/windows-server/get-started/kmsclientkeys
+* https://gist.github.com/Minionguyjpro/d913b3931e844ad8ad9a758a4aca4b63
 
 ### Get In Touch
 
@@ -185,4 +186,4 @@ us by posting to wuseman@nr1.nu
 
 ### Website
 
-* https://wwww.nr1.nu/cracking/wloader/
+* https://wwww.nr1.nu

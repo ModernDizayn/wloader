@@ -8,6 +8,25 @@ also removing all bloatware from Windows 10. Edit script after your needs.
 To display more detailed license information–including the activation ID, installation ID, and other details–run the following command:
 slmgr.vbs /dlv
 
+### Run Windows 11 PRO Installer:
+
+Greetings to: [Minionguyjpro](https://gist.github.com/Minionguyjpro/d913b3931e844ad8ad9a758a4aca4b63) - Author
+
+```powershell
+sc config LicenseManager start= auto & net start LicenseManager
+sc config wuauserv start= auto & net start wuauserv
+changepk.exe /productkey VK7JG-NPHTM-C97JM-9MPGT-3V66T
+exit
+```
+
+### Upgrade Windows 10/11 to PRO by copy and paste below:
+
+```powershell
+slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
+slmgr /skms kms8.msguides.com
+slmgr /ato
+```
+
 ### Activate Windows 10 Enterprise 10.0.19043 N/A Build 19043, full example 
 
 ```powershell

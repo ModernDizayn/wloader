@@ -11,7 +11,7 @@ https://user-images.githubusercontent.com/26827453/196012732-7ba9aa61-fd33-4e57-
 
 
 To display more detailed license information–including the activation ID,
-installation ID, and other details–run the following command:
+installation ID, and other details–run  the following command:
 ```powershell
 slmgr.vbs /dlv
 ```
@@ -25,7 +25,7 @@ sc config LicenseManager start= auto & net start LicenseManager
 sc config wuauserv start= auto & net start wuauserv
 changepk.exe /productkey VK7JG-NPHTM-C97JM-9MPGT-3V66T
 exit
-```
+```5
 
 ### Upgrade Windows 10/11 to PRO by copy and paste below:
 
